@@ -1,0 +1,6 @@
+import requests
+import json
+response=requests.get('https://v1.hitokoto.cn/').text
+result=json.loads(response)
+neirong=result['hitokoto']
+from_where=result['from']
